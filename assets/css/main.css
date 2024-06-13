@@ -131,6 +131,61 @@ q:after {
   content: "";
   content: none;
 }
+.tab-content {
+	display: none;
+}
+.tab-content.active {
+	display: block;
+}
+/* Add this CSS to main.css */
+
+/* Existing CSS for project rows */
+/* Existing CSS for project rows */
+/* Existing CSS for project rows */
+.posts .project-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.whitespace {
+  white-space: pre;
+}
+#list1{ 
+  color: rgb(0, 0, 0); 
+  background: white; 
+  font-size: 15px; 
+}
+.fancy {
+  list-style: none; /* Remove default list style */
+  margin-left: 1.5em; /* Adjust the space between bullet and text */
+}
+
+.fancy::before {
+  content: "\00BB"; 
+  
+  font-weight: bold; /* Make the bullet bold */
+  font-size: 1.6em; /* Increase the size of the bullet */
+  margin-right: 0.5em; /* Adjust spacing between bullet and text */
+}
+.posts .project-row article {
+  flex: 0 0 48%; /* Adjust the width as needed */
+  box-sizing: border-box;
+}
+
+
+.posts .project-row article .image.fit {
+  width: 100%;
+  height: auto;
+}
+
+/* New CSS for centering project names */
+.posts .project-row article header,
+.post.featured header {
+  text-align: center;
+}
+
+
+
 
 table {
   border-collapse: collapse;
