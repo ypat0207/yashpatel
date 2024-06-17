@@ -132,10 +132,10 @@ q:after {
   content: none;
 }
 .tab-content {
-  display: none;
+	display: none;
 }
 .tab-content.active {
-  display: block;
+	display: block;
 }
 /* Add this CSS to main.css */
 
@@ -150,25 +150,10 @@ q:after {
 .whitespace {
   white-space: pre;
 }
-
-.vertical-line {
-  width: 1px;
-  background-color: #000000;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.pad-right {
-  padding-right: 20px;
-}
-.pad-left {
-  padding-left: 40px;
-}
-#list1 {
-  color: rgb(0, 0, 0);
-  background: white;
-  font-size: 15px;
+#list1{ 
+  color: rgb(0, 0, 0); 
+  background: white; 
+  font-size: 15px; 
 }
 .fancy {
   list-style: none; /* Remove default list style */
@@ -176,8 +161,8 @@ q:after {
 }
 
 .fancy::before {
-  content: "\00BB";
-
+  content: "\00BB"; 
+  
   font-weight: bold; /* Make the bullet bold */
   font-size: 1.6em; /* Increase the size of the bullet */
   margin-right: 0.5em; /* Adjust spacing between bullet and text */
@@ -186,6 +171,7 @@ q:after {
   flex: 0 0 48%; /* Adjust the width as needed */
   box-sizing: border-box;
 }
+
 
 .posts .project-row article .image.fit {
   width: 100%;
@@ -197,6 +183,9 @@ q:after {
 .post.featured header {
   text-align: center;
 }
+
+
+
 
 table {
   border-collapse: collapse;
@@ -324,9 +313,7 @@ a {
 a:hover {
   border-bottom-color: transparent;
 }
-h3 {
-  justify-content: center;
-}
+
 strong,
 b {
   font-weight: 600;
@@ -457,10 +444,41 @@ hr.major {
 .align-center {
   text-align: center;
 }
-
+hr {
+  border: none;
+  height: 1px;
+  color: black;
+  background-color: black;
+  margin: 80px 0;
+  width: 100%;
+}
+.vertical-line {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.website-p {
+  text-align: justify;
+}
+.embed-container {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+}
+.website {
+  text-align: justify;
+}
+.embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .align-right {
   text-align: right;
 }
+
 
 input,
 select,
@@ -1433,12 +1451,7 @@ hr {
   .row > * {
     padding: 0 0 0 1.5rem;
   }
-  h3 {
-    text-align: center;
-  }
-  .footer-text {
-    text-align: center;
-  }
+
   .row.gtr-uniform {
     margin-top: -1.5rem;
   }
@@ -3427,27 +3440,7 @@ table.alt tbody tr td {
   background-attachment: scroll, scroll, scroll;
   z-index: -1;
 }
-.embed-container {
-  width: 100%;
-  height: 120vh;
-  overflow: hidden;
-}
-.website-p {
-  text-align: justify;
-}
-hr {
-  border: none;
-  height: 1px;
-  color: black;
-  background-color: black;
-  margin: 80px 0;
-  width: 100%;
-}
-.embed-container iframe {
-  width: 100%;
-  height: 200%;
-  border: 0;
-}
+
 #wrapper > .bg.fixed {
   position: fixed;
   width: 100vw;
@@ -3522,9 +3515,7 @@ body.is-preload #wrapper.fade-in:before {
 #intro textarea {
   color: #ffffff;
 }
-.website {
-  text-align: justify;
-}
+
 #intro a {
   color: #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.5);
