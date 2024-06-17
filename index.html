@@ -54,7 +54,7 @@
 					<section>
 						<article>
 							<header>
-								<h2>Software Engineer Intern</h2>
+								<h2>Software Engineering Intern</h2>
 								<p>LN Solutions - January 2024 to Present</p>
 							</header>
 							<p>
@@ -260,6 +260,9 @@
 					
 					document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 					document.getElementById(tab).classList.add('active');
+					
+					// Update menu text
+					document.querySelector('header .logo').textContent = link.textContent;
 				});
 			});
 		</script>
