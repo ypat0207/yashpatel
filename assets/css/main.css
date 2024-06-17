@@ -4917,4 +4917,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   .footer-text {
     text-align: center;
   }
+  section ul.icons {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
 }
